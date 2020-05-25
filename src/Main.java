@@ -8,7 +8,7 @@ public class Main {
         int number = in.nextInt();
         int width = 0;
         while(width < number){
-            for (int i = 0; i < number-width; i++) {
+            for (int i = 0; i < number-width-1; i++) {
                 System.out.print(" ");
             }
             for (int i = 0; i < width*2 + 1; i++) {
@@ -17,5 +17,6 @@ public class Main {
             System.out.println();
             width++;
         }
+        in.close();
     }
 }
